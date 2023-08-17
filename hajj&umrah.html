@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+  <h2>Our Services</h2>
+  
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="hajj_umrah_image.jpg" class="card-img-top" alt="Hajj and Umrah Services">
+        <div class="card-body">
+          <h5 class="card-title">Hajj & Umrah Services</h5>
+          <p class="card-text">Embark on a spiritual journey of a lifetime with our meticulously planned Hajj and Umrah packages.</p>
+          <button class="btn btn-link" onclick="toggleDetails('hajjUmrahDetails')">View Details</button>
+          <div id="hajjUmrahDetails" style="display: none;">
+            <h6>Packages Include:</h6>
+            <ul>
+              <li><strong>Airline Tickets:</strong> Business Class, Economy Class</li>
+              <li><strong>Hotel Facilities:</strong> 5-star, 4-star, 3-star</li>
+              <li><strong>Distance from Haram:</strong> 200 meters, 400 meters, 500 meters</li>
+              <li><strong>Room Options:</strong> Single Bed, Double Bed, Sharing Room</li>
+            </ul>
+            <p>Our comprehensive Hajj and Umrah services ensure a memorable and spiritually enriching experience for every pilgrim.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add more service cards as needed -->
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  function toggleDetails(detailsId) {
+    var detailsDiv = document.getElementById(detailsId);
+    if (detailsDiv.style.display === "none") {
+      detailsDiv.style.display = "block";
+    } else {
+      detailsDiv.style.display = "none";
+    }
+  }
+</script>
+</body>
+</html>
